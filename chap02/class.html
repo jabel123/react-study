@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+</head>
+<body>
+    <div id="content"></div>
+    <script type="text/javascript">
+        class HelloWorld extends React.Component {
+            render() {
+                return React.createElement(
+                    'h1', 
+                    null,
+                    'Hello ' + this.props.title + ' World!!!'
+                )
+            }
+        }
+
+        ReactDOM.render(
+            React.createElement(
+                'div', 
+                null, 
+                React.createElement(HelloWorld, {
+                    id: 'ember',                    
+                    frameworkName: 'Ember.js',
+                    title: 'A framework for create'
+                }),
+                React.createElement(HelloWorld, {
+                    id: 'backbone',
+                    frameworkName: 'backbone.js',
+                    title: 'A framework for backbone create'
+                }),
+                React.createElement(HelloWorld, {
+                    id: '박정인씨벌련',
+                    frameworkName: '박정인씨벌련.js',
+                    title: 'A framework for 박정인씨벌련 create'
+                })
+            ),
+            document.getElementById('content')
+        )
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+</head>
+<body>
+    <div id="content"></div>
+    <script type="text/javascript">
+        let h1 = React.createElement('h1', null, 'Hello World');
+        class HelloWorld extends React.Component {
+            render() {
+                console.log(Object.isFrozen(this.props))
+                console.log(this.props)
+                return React.createElement('div', null, h1, h1, h1)
+            }
+        }
+
+        ReactDOM.render(
+            React.createElement(HelloWorld, null),
+            document.getElementById('content')
+        )
+    </script>
+</body>
+</html>
