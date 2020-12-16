@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://unpkg.com/react@15/dist/react.js"></script>
+    <script src="https://unpkg.com/react-dom@15/dist/react-dom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.js"></script>
+</head>
+<body>
+    <div id="content"></div>
+    <script type="text/babel">
+        class Content extends React.Component{
+            getUrl() {
+                return 'http://webapplog.com'
+            }
+            render() {
+                return (
+                    <div>
+                        <p> Your REST API URL is: <a href={this.getUrl()}>{this.getUrl()}</a></p>
+                    </div>
+                )
+            }
+        }
+
+        ReactDOM.render(
+            <div>
+                <Content/>
+            </div>
+            , document.getElementById('content')
+        )
+        
+    </script>
+</body>
+</html>

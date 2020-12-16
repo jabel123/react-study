@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://unpkg.com/react@15/dist/react.js"></script>
+    <script src="https://unpkg.com/react-dom@15/dist/react-dom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.js"></script>
+</head>
+<body>
+    <div id="content"></div>
+    <script type="text/babel">
+        class HelloWorld extends React.Component {
+            render() {
+                return <h1 {...this.props}> Hello {this.props.frameworkName} world!!! </h1>
+            }
+        }
+
+        ReactDOM.render(
+            <div>
+                <HelloWorld
+                    id='emeber'
+                    frameworkName='Ember.js'
+                    title='Aframework for creating ambitious web applications.'/>,
+                <HelloWorld
+                    id='backbone'
+                    frameworkName='backbone.js'
+                    title='Aframework for creating ambitious web applications.'/>,
+                <HelloWorld
+                    id='emeber'
+                    frameworkName='angular.js'
+                    title='Aframework for creating ambitious web applications.'/>
+            </div>
+            , document.getElementById('content')
+        )
+    </script>
+</body>
+</html>

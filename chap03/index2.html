@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://unpkg.com/react@15/dist/react.js"></script>
+    <script src="https://unpkg.com/react-dom@15/dist/react-dom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.js"></script>
+</head>
+<body>
+    <div id="content"></div>
+    <script type="text/babel">
+        class DateTimeNow extends React.Component {
+            render() {
+                let dateTimeNow = new Date().toLocaleString()
+                return <span>Current date and time is {dateTimeNow}. userName = {this.props.userName}</span>
+            }
+        }
+
+        ReactDOM.render(
+            (
+                <div>
+                    <a href="http://reacquickly.co"> Time for React?</a>
+                    <DateTimeNow userName='Azat'/>
+                </div>
+            )            
+            , document.getElementById('content')
+        )
+    </script>
+</body>
+</html>

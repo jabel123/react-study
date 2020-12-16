@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://unpkg.com/react@15/dist/react.js"></script>
+    <script src="https://unpkg.com/react-dom@15/dist/react-dom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.js"></script>
+</head>
+<body>
+    <div id="content"></div>
+    <script type="text/babel">
+        class HelloWorld extends React.Component{
+            render() {
+                return (
+                    <div>
+                        <h1>Hello World</h1>
+                        <h1>할로</h1>
+                    </div>
+                )
+            }
+        }
+        ReactDOM.render(
+            <HelloWorld/>,
+            document.getElementById('content')
+        )
+    </script>
+</body>
+</html>
