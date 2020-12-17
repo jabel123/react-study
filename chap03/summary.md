@@ -127,3 +127,26 @@ render() {
     else
         return <a href="/login">Login</a>
 }
+```
+
+선호하는 방식
+```
+render(){
+    let sessionFlag = this.props.user.session
+    return <div>
+        <a href={(sessionFlag) ? '/logout' : '/login'}>
+            {(sessionFlag) ? 'Logout' : 'Login'}
+        </a>
+    </div>
+}
+
+```
+
+## 6 JSX의 주석 작성방법
+
+```
+let content = (
+    <div>
+        {/* 표준 자바스크립트의 주석과 같으나 {} 감싸주는게 다르다*/}
+    </div>
+)
