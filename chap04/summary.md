@@ -20,3 +20,5 @@ JSX를 사용하기 위해 babel cli를 사용하게 되는데 이에 대한 사
 2. npm install @babel/core @babel/cli  @babel/plugin-transform-arrow-functions @babel/plugin-transform-template-literals @babel/preset-react
 3. npx babel src/code.js --presets=@babel/preset-react --plugins=@babel/plugin-transform-template-literals,@babel/plugin-transform-arrow-functions
 ```
+
+뭔가,, Babel부터 공부해야 할 듯한 느낌.. 
