@@ -240,3 +240,14 @@ $ npm install @babel/core @babel/cli @babel/plugin-transform-arrow-functions @ba
 
 ## 컴파일할 코드 작성
 example-extends 폴더에 code.js파일 작성
+```
+const element = <div>babel test</div>;
+const text = `element type is ${element.type}`;
+const add = (a, b) => a + b;
+```
+
+## 바벨 실행 및 결과
+```
+$ npx babel src/example-extends/code.js
+```
+
