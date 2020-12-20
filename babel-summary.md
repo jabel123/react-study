@@ -251,3 +251,11 @@ const add = (a, b) => a + b;
 $ npx babel src/example-extends/code.js
 ```
 
+
+## 요약
+- componentWillMount()는 서버와 클라이언트에서 모두 실행되는 반면에, componentDidMoundt()는 클라이언트에서만 실행된다.
+- 마운팅 이벤트는 일반적으로 React를 다른 라이브러리와 통합하거나 저장소 또는 서버에서 데이터를 가져올떄 사용된다.
+- shouldComponentUpdate()를 사용해서 렌더링을 최적화할 수 있다.
+- componentWillReceiveProps()를 사용하면 새로운 속성이 전달될 때 상태를 변경할 수 있따.
+- 언마운팅 이벤트는 일반적으로 정리에 사용된ㄷ.
+- 갱신 이벤트는 새로운 속성이나 상태를 의존하는 로직을 작성할때 사용하고, 뷰를 갱신하는 시점을 세밀하게 조절할 수 있다. 
