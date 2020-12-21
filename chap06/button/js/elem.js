@@ -1,0 +1,1 @@
+class Elem extends React.Component {}
