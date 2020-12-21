@@ -1,1 +1,1 @@
-ReactDOM.render( /*#__PURE__*/React.createElement(SaveButton, null), /*#__PURE__*/React.createElement(SaveButton, null), document.getElementById('content'));
+ReactDOM.render( /*#__PURE__*/React.createElement(Content, null), document.getElementById('content'));

@@ -1,4 +1,4 @@
 ReactDOM.render(
-    <Content/>    
+    <Radio/>
     , document.getElementById('content')
 )
