@@ -1,0 +1,28 @@
+{
+  "name": "chap04",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "babel": {
+    "presets": [
+      "@babel/preset-react"
+    ]
+  },
+  "scripts": {
+    "build-ex1": "./node_modules/.bin/babel ex1/jsx -d ex1/js -w",
+    "build-bank": "./node_modules/.bin/babel bank/jsx -d bank/js -w",
+    "build-uncontrolled": "./node_modules/.bin/babel uncontrolled/jsx -d uncontrolled/js -w",
+    "build-email": "./node_modules/.bin/babel email/jsx -d email/js -w",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/plugin-transform-arrow-functions": "^7.12.1",
+    "@babel/plugin-transform-template-literals": "^7.12.1",
+    "@babel/preset-react": "^7.12.10"
+  }
+}
