@@ -10,7 +10,7 @@
 - [5장. React 컴포넌트 라이프사이클 이벤트](./chap05/summary.md)
 - [6장. React에서 이벤트 다루기](./chap06/summary.md)
 - [7장. React에서 폼 다루기](./chap07/summary.md)
-- 8장. 확장성을 고려한 React 컴포넌트
+- [8장. 확장성을 고려한 React 컴포넌트](./chap08/summary.md)
 - 9장. 프로젝트: Menu 컴포넌트
 - 10장. 프로젝트: Tooltip 컴포넌트
 - 11장. 프로젝트: Timer 컴포넌트
