@@ -10,6 +10,7 @@
   },
   "scripts": {
     "build-ex1": "./node_modules/.bin/babel ex1/jsx -d ex1/js -w",
+    "build-children": "./node_modules/.bin/babel children/jsx -d children/js -w",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

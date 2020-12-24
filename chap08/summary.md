@@ -39,3 +39,44 @@ prop-types를 HTML파일에 추가해야 한다.
 ```
 리액트 버전 15.4또는 이전 버전을 사용하는 경우에는 React.PropTypes로 React에 포함되어 있으므로 prop-types를 추가할 필요가 없다. 
 
+---
+## 자식 엘리먼트 렌더링
+
+가상의 React 프로젝트를 다시 진행해보자. Datepicker 컴포넌트는 훌륭하게 개선되어 누락되거나 잘못된 속성이 있으면 경고를 보여주는 수준이 되었으므로, 이번에는 자식 컴포넌트를 얼마든지 추가할 수 있는 범용 컴포넌트를 생성하는 경우를 살펴보자. 다음은 블로그 글에서 사용되는 Content 컴포넌트로 제목과 단락을 포함할 수 있다.
+```
+<Content>
+    <h1>React.js</h1>
+    <p>Rocks</p>
+</Content>
+```
+다음은 이미지를 사용하는 경우이다.
+```
+<Content>
+    <img src="fdfa.jpg"/>
+</Content>
+```
+제시한 두 가지 글은 모두 Content를 사용하지만 서로 다른 자식을 전달한다. 자식으로 전달하면 무엇이든 렌더링할 수 있는 훌륭한 기능이 있다면 어떨까?? 
+```
+class Content extends React.Component { 
+    render() {
+        return (
+            <div className="content">
+                {this.props.children}
+            </div>
+        )
+    }
+}
+```
+this.props.children을 사용하면 유연하고 강력하며 범용적인 컴포넌트를 생성하여 얼마든지 자식을 추가할 수 있다.
+
+children 속성의 흥미로운 점은 자식 엘리먼트가 하나이상 있는 경우에 배열이 된다는 것이다. 다음과 같이 개별 엘리먼트에 접근할 수 있따.
+```
+{this.props.children[0]}
+{this.props.children[1]}
+```
+
+이와 같은 방법으로 자식에 접근할 때는 주의가 필요하다. 자식 엘리먼트가 하나뿐이면 this.props.children은 배열이 아니다. 문자열인 자식 엘리먼트가 하남나 있을때 this.props.children.length를 사용하면 문자열의 수를 반환하므로 버그로 이어질 수 있다. 대신에 React.Children.count(this.props.children)을 사용하면 자식 엘리먼트의 수를 정확하게 확인할 수 있다. 
+다음과 같은 기능도 있으니 참고를 한다.
+- React.Children.map()
+- React.Children.forEach()
+- React.Children.toArray()
