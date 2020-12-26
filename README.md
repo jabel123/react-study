@@ -14,7 +14,7 @@
 - [9장. 프로젝트: Menu 컴포넌트](./chap09/summary.md)
 - [10장. 프로젝트: Tooltip 컴포넌트](./chap10/summary.md)
 - [11장. 프로젝트: Timer 컴포넌트](./chap11/summary.md)
-- 12장. Webpack 빌드도구
+- [12장. Webpack 빌드도구](./chap12/summary.md)
 - 13장. React 라우팅
 - 14장. Redux를 이용한 데이터 다루기
 - 15장. GraphQL을 이용한 데이터 다루기
