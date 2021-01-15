@@ -16,7 +16,7 @@
 - [11장. 프로젝트: Timer 컴포넌트](./chap11/summary.md)
 - [12장. Webpack 빌드도구](./chap12/summary.md)
 - 13장. React 라우팅
-- 14장. Redux를 이용한 데이터 다루기
+- [14장. Redux를 이용한 데이터 다루기](./chap14/summary.md)
 - 15장. GraphQL을 이용한 데이터 다루기
 - 16장. Jest를 이용한 React 단위 테스트
 - 17장. React와 Node.js를 이용한 유니버셜 자바스크립트
